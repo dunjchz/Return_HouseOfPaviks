@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartScreen : MonoBehaviour
 {
     public void StartGame(){
-        SceneManager.LoadScene("Game");      
+        SceneManager.LoadScene("ViewRoom_Scene1");      
     }
     public void LoadOptions()
     {
@@ -16,4 +16,16 @@ public class StartScreen : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+
+    public void SceneChange()
+{
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
+public void SceneChangeBack()
+{
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+}
+}
+
