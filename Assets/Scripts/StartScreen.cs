@@ -12,6 +12,10 @@ public class StartScreen : MonoBehaviour
     {
         SceneManager.LoadScene("Options");
     }
+    public void LoadStartscreen()
+    {
+        SceneManager.LoadScene("StartScreen");
+    }
     public void LoadCredits()
     {
         SceneManager.LoadScene("Credits");
@@ -23,9 +27,10 @@ public class StartScreen : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
-public void SceneChangeBack()
+    public void SceneChangeBack()
 {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 }
 }
+
 
