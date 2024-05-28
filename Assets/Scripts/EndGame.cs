@@ -7,7 +7,7 @@ public class EndGame : MonoBehaviour
 {
     public void OnMouseDown()
     {
-        if (PlayerPrefs.GetInt("LockSolved", 0) == 1)
+        if (GameManager.Instance.AreAllLocksSolved())
         {
             EndGameButton();
         }
@@ -20,5 +20,6 @@ public class EndGame : MonoBehaviour
     void EndGameButton()
     {
         Debug.Log("Game ended!"); 
+        Application.Quit(); 
     }
 }

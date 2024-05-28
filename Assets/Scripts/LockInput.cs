@@ -22,7 +22,7 @@ public class LockInput : MonoBehaviour
             //Debug.Log("Code is correct, u have fuel now");
             errorMessage.text = "Code correct! You have a fuel now.";
             lockPanel.SetActive(false);
-            PlayerPrefs.SetInt("LockSolved", 1); 
+            GameManager.Instance.SetLockSolved(1);
             
         }
         else
