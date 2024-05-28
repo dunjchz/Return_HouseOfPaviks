@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LabRoom_Scene3.unity
     guid: 065d1c638c07adf4b9bcf659e294972a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Options.unity
     guid: cae7237fab23bd243a8e55633b968cff
   - enabled: 1
